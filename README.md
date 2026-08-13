@@ -1,196 +1,108 @@
+<h1>Meu blog tech</h1>
+
+<p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto Agrinho - Blog e Feed</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
 </head>
 <body>
-
-  <header class="header-azul">
-    <h1>🌱 Projeto Agrinho</h1>
-    <p>Sustentabilidade, Inovação e Campo</p>
-  </header>
-
-  <main class="container">
-    <section class="card novo-post">
-      <h2>Criar Nova Publicação</h2>
-      <form id="form-post">
-        <input type="text" id="titulo" placeholder="Título da publicação..." required>
-        <textarea id="conteudo" rows="4" placeholder="Escreva sobre o seu projeto do Agrinho..." required></textarea>
-        <button type="submit">Publicar</button>
-      </form>
-    </section>
-
-    <section>
-      <h2>Publicações</h2>
-      <div id="feed-posts"></div>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
+<h1>Meu blog tech</h1>
+<p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
 </body>
 </html>
-/* Configurações Gerais */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+<header>
+<h1>Meu blog tech</h1>
+<p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+</header>
+<main>
+<h2>Meu primeiro post</h2>
+<p>Por: Marcelo Paludetto</p>
+<p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
+</main>
+
+header {
+background-color: #183C63;
+color: #FFFFFF;
+text-align: center;
+max-width: 800px;
+margin: 0 auto;
+padding: 16px;
+}
+<img src="imagem-blog.png" alt="logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
+
+
+img {
+width: 80px;
+height: 80px;
 }
 
-body {
-  background-color: #f4f7f6;
-  color: #333;
+main {
+display: flex;
 }
 
-/* Cabeçalho Azul */
-.header-azul {
-  background-color: #1e88e5;
-  color: #ffffff;
-  text-align: center;
-  padding: 2.5rem 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+<div>
+<h2>Meu primeiro post</h2>
+<p>Por: Marcelo Paludetto</p>
+<p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
+</div>
+
+
+p {
+font-weight: bold;
+}
+div p {
+font-weight: bold;
 }
 
-.header-azul h1 {
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
+<p class="artigo-autor">Por: Marcelo Paludetto </p>
+.artigo-autor {
+font-weight: bold;
 }
 
-/* Container Principal */
-.container {
-  max-width: 700px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+<button></button>
+
+<button>❤️<span>0</span></button>
+
+
+<script>
+
+</script>
+const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+
+function botaoClicado() {
+console.log("fui clicado");
 }
 
-/* Estilo dos Cards */
-.card {
-  background: #ffffff;
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+function botaoClicado() {
+let texto = botao.querySelector("span");
+texto.textContent++;
 }
 
-/* Formulário */
-.novo-post h2 {
-  margin-bottom: 1rem;
-  color: #1e88e5;
-}
+<button>❤️<span>0</span></button>
+<button>❤️<span>0</span></button>
 
-.novo-post input, 
-.novo-post textarea {
-  width: 100%;
-  padding: 0.8rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-}
 
-.novo-post button {
-  background-color: #2e7d32; /* Verde Agrinho */
-  color: white;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
+document.querySelector("button")
+const botoes = document.querySelectorAll("button");
+botoes.forEach(function(botao) {
 
-.novo-post button:hover {
-  background-color: #1b5e20;
-}
-
-/* Posts do Feed */
-.post h3 {
-  color: #1565c0;
-  margin-bottom: 0.5rem;
-}
-
-.post p {
-  line-height: 1.5;
-  margin-bottom: 1rem;
-}
-
-.btn-curtir {
-  background-color: #e3f2fd;
-  color: #1e88e5;
-  border: 1px solid #90caf9;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: all 0.2s;
-}
-
-.btn-curtir:hover {
-  background-color: #1e88e5;
-  color: white;
-}
-document.addEventListener('DOMContentLoaded', () => {
-  const formPost = document.getElementById('form-post');
-  const feedPosts = document.getElementById('feed-posts');
-
-  // Adiciona um post inicial de exemplo
-  criarPost('Sustentabilidade na Escola', 'Nosso projeto do Agrinho deste ano foca na reciclagem e hortas comunitárias.');
-
-  // Evento ao enviar o formulário
-  formPost.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const titulo = document.getElementById('titulo').value;
-    const conteudo = document.getElementById('conteudo').value;
-
-    criarPost(titulo, conteudo);
-
-    // Limpa o formulário
-    formPost.reset();
-  });
-
-  // Função para criar a estrutura do post
-  function criarPost(titulo, conteudo) {
-    const postArtigo = document.createElement('article');
-    postArtigo.classList.add('card', 'post');
-
-    let curtidas = 0;
-
-    postArtigo.innerHTML = `
-      <h3>${titulo}</h3>
-      <p>${conteudo}</p>
-      <button class="btn-curtir">👍 Curtir (<span class="qtd-curtidas">0</span>)</button>
-    `;
-
-    // Lógica do Botão de Curtir
-    const btnCurtir = postArtigo.querySelector('.btn-curtir');
-    const spanCurtidas = postArtigo.querySelector('.qtd-curtidas');
-
-    btnCurtir.addEventListener('click', () => {
-      curtidas++;
-      spanCurtidas.textContent = curtidas;
-    });
-
-    // Insere o novo post no topo do feed
-    feedPosts.prepend(postArtigo);
-  }
 });
+botoes.forEach(function(botao) {
+botao.addEventListener("click", botaoClicado);
 
-
-
-
-
-
-
-
-
-
-
-
-
+function botaoClicado() {
+console.log("fui clicado");
+let texto = botao.querySelector("span");
+texto.textContent++;
+}
+});
 
 
 
