@@ -19,7 +19,7 @@
 </body>
 
 </html>
-main {
+{
 background-color: #FFFFFF;
 color: #183C63;
 }
