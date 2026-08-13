@@ -15,12 +15,13 @@
 <p>Por: Marcelo Paludetto</p>
 <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
 </main>
+  
+</body>
+
 main {
 background-color: #FFFFFF;
 color: #183C63;
 }
-  
-</body>
 </html>
 
 
