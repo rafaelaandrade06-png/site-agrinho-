@@ -26,6 +26,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Blog</title>
+
+
+<style>
+
+header {
+background-color: #183C63;
+color: #FFFFFF;
+}
+
+main {
+background-color: #FFFFFF;
+color: #183C63;
+}  
+  
+</style>  
 </head>
 <body>
 <h1>Meu blog tech</h1>
@@ -33,8 +48,8 @@
 </body>
 </html>
 
-
-
+max-width: 800px;
+margin: 0 auto;
 
 
 
