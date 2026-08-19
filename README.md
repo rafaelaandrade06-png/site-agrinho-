@@ -1,117 +1,275 @@
-<h1>Meu blog tech</h1>
-
-<p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
-
 <!DOCTYPE html>
-
 <html lang="pt-br">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caminhos Sustentáveis</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<h1>Meu blog tech</h1>
-<p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+
+    <header>
+        <h1>🌱 Caminhos Sustentáveis</h1>
+        <p>Conectando o campo e a cidade por um futuro melhor</p>
+    </header>
+
+    <main>
+
+        <article>
+            <img src="imagem-agrinho.png"
+                alt="Ilustração representando a conexão entre o campo e a cidade">
+
+            <div>
+                <h2>Campo e cidade: uma conexão necessária</h2>
+
+                <p class="artigo-autor">Por: Rafaela Andrade</p>
+
+                <p>
+                    O campo e a cidade possuem diferenças, mas também dependem
+                    um do outro. Enquanto o campo é responsável por grande parte
+                    da produção de alimentos e matérias-primas, a cidade concentra
+                    serviços, comércio, tecnologia e muitas oportunidades.
+                </p>
+
+                <p>
+                    A sustentabilidade é fundamental para aproximar esses dois
+                    espaços e construir um futuro com mais equilíbrio,
+                    responsabilidade e qualidade de vida.
+                </p>
+
+                <button class="botao-curtir">
+                    ❤️ <span>0</span>
+                </button>
+
+                <button class="botao-curtir">
+                    👍 <span>0</span>
+                </button>
+            </div>
+        </article>
+
+
+        <article>
+            <img src="imagem-agrinho.png"
+                alt="Paisagem mostrando uma área rural e uma cidade">
+
+            <div>
+                <h2>A importância do campo</h2>
+
+                <p class="artigo-autor">Por: Rafaela Andrade</p>
+
+                <p>
+                    O campo tem um papel essencial na nossa sociedade. É nele
+                    que são produzidos muitos dos alimentos que chegam até as
+                    nossas mesas, além de matérias-primas utilizadas em diversos
+                    produtos.
+                </p>
+
+                <p>
+                    Utilizar práticas agrícolas sustentáveis ajuda a preservar
+                    o solo, a água, a biodiversidade e os recursos naturais.
+                </p>
+
+                <button class="botao-curtir">
+                    ❤️ <span>0</span>
+                </button>
+
+                <button class="botao-curtir">
+                    👍 <span>0</span>
+                </button>
+            </div>
+        </article>
+
+
+        <article>
+            <img src="imagem-agrinho.png"
+                alt="Cidade sustentável com áreas verdes e tecnologias">
+
+            <div>
+                <h2>Uma cidade mais sustentável</h2>
+
+                <p class="artigo-autor">Por: Rafaela Andrade</p>
+
+                <p>
+                    Nas cidades, pequenas atitudes podem contribuir para a
+                    sustentabilidade. A separação do lixo, a reciclagem,
+                    a economia de água e energia e o uso consciente dos
+                    recursos são exemplos importantes.
+                </p>
+
+                <p>
+                    A tecnologia também pode ajudar na criação de cidades
+                    mais inteligentes, organizadas e sustentáveis.
+                </p>
+
+                <button class="botao-curtir">
+                    ❤️ <span>0</span>
+                </button>
+
+                <button class="botao-curtir">
+                    👍 <span>0</span>
+                </button>
+            </div>
+        </article>
+
+
+        <article>
+            <img src="imagem-agrinho.png"
+                alt="Representação da união entre agricultura, tecnologia e sustentabilidade">
+
+            <div>
+                <h2>Tecnologia e sustentabilidade</h2>
+
+                <p class="artigo-autor">Por: Rafaela Andrade</p>
+
+                <p>
+                    A tecnologia pode contribuir tanto no campo quanto na cidade.
+                    No campo, ela pode auxiliar no monitoramento das plantações,
+                    na economia de água e no aumento da eficiência da produção.
+                </p>
+
+                <p>
+                    Quando utilizada de maneira consciente, a tecnologia pode
+                    ajudar a diminuir desperdícios e preservar os recursos
+                    naturais.
+                </p>
+
+                <button class="botao-curtir">
+                    ❤️ <span>0</span>
+                </button>
+
+                <button class="botao-curtir">
+                    👍 <span>0</span>
+                </button>
+            </div>
+        </article>
+
+    </main>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<header>
-<h1>Meu blog tech</h1>
-<p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
-</header>
-<main>
-<h2>Meu primeiro post</h2>
-<p>Por: Marcelo Paludetto</p>
-<p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
-</main>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef5e8;
+    color: #263b28;
+}
 
 header {
-background-color: #183C63;
-color: #FFFFFF;
-text-align: center;
-max-width: 800px;
-margin: 0 auto;
-padding: 16px;
+    background-color: #2e6b3e;
+    color: #ffffff;
+    text-align: center;
+    padding: 35px 20px;
 }
-<img src="imagem-blog.png" alt="logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
 
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
 
-img {
-width: 80px;
-height: 80px;
+header p {
+    font-size: 18px;
 }
 
 main {
-display: flex;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
 }
 
-<div>
-<h2>Meu primeiro post</h2>
-<p>Por: Marcelo Paludetto</p>
-<p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
-</div>
-
-
-p {
-font-weight: bold;
-}
-div p {
-font-weight: bold;
+article {
+    display: flex;
+    gap: 25px;
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
 }
 
-<p class="artigo-autor">Por: Marcelo Paludetto </p>
+article img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+article div {
+    flex: 1;
+}
+
+article h2 {
+    color: #2e6b3e;
+    margin-bottom: 8px;
+}
+
+article p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
 .artigo-autor {
-font-weight: bold;
+    font-weight: bold;
+    color: #56745a;
 }
 
-<button></button>
-
-<button>❤️<span>0</span></button>
-
-
-<script>
-
-</script>
-const botao = document.querySelector("button");
-botao.addEventListener("click", botaoClicado);
-
-function botaoClicado() {
-console.log("fui clicado");
+button {
+    border: none;
+    background-color: #e5f0df;
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 8px;
 }
 
-function botaoClicado() {
-let texto = botao.querySelector("span");
-texto.textContent++;
+button:hover {
+    background-color: #cfe3c8;
 }
 
-<button>❤️<span>0</span></button>
-<button>❤️<span>0</span></button>
+@media (max-width: 700px) {
+
+    article {
+        flex-direction: column;
+    }
+
+    article img {
+        width: 100%;
+        height: 200px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+}
 
 
-document.querySelector("button")
-const botoes = document.querySelectorAll("button");
+const botoes = document.querySelectorAll(".botao-curtir");
+
 botoes.forEach(function(botao) {
 
+    let curtiu = false;
+
+    botao.addEventListener("click", function() {
+
+        let texto = botao.querySelector("span");
+
+        if (curtiu === false) {
+            texto.textContent++;
+            curtiu = true;
+        } else {
+            texto.textContent--;
+            curtiu = false;
+        }
+
+    });
+
 });
-botoes.forEach(function(botao) {
-botao.addEventListener("click", botaoClicado);
-
-function botaoClicado() {
-console.log("fui clicado");
-let texto = botao.querySelector("span");
-texto.textContent++;
-}
-});
-
-
-
-
-
-
-
-
-
-
-
-
